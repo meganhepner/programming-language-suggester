@@ -7,24 +7,34 @@ $(document).ready(function() {
     const favOutdoor =  $("input:radio[name=outdoor]:checked").val();
     const favFood =  $("input:radio[name=food]:checked").val();
     const favAnimal =  $("input:radio[name=animal]:checked").val();
-    // let result = yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal);
+ 
+    let result = yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal);
 
-    if (!!favBeverage) {
-      $('#python').show();
-    }
+    // if (result = python) {
+    //   $('#python').show();
+    // } else if (result = javascript){
+    //   $('#javascript').show();
+    // } else if (result = COBOL){
+    //   $('#COBOL').show();
+    // } else if (result = COBOL){
+    //   $('#Ruby').show();
+    // }
   });
 });
 
 //Business Logic
-function yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal) {
+function yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal) { 
   if(!!favBeverage === true && !!favMusic === true && !!favOutdoor === true && favFood === "sushi" && !!favAnimal === true){
-    $('#python').show();
+    result = ("python");
   } else if(!!favBeverage === true && !!favMusic === true && !!favOutdoor === true && favFood === "tartare" && !!favAnimal === true){
-    result = javascript;
+    result = "javascript";
   } else if(!!favBeverage === true && !!favMusic === true && !!favOutdoor === true && favFood === "foie" && !!favAnimal === true){
-    result = COBOL;
+    result = "COBOL";
   } else if(!!favBeverage === true && !!favMusic === true && !!favOutdoor === true && favFood === "truffles" && !!favAnimal === true){
-    result = Ruby;
+    result = "Ruby";
   } 
-  // return result;
+  return result;
+  alert(result)
+
+ 
 }
