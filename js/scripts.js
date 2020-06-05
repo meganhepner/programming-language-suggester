@@ -8,11 +8,14 @@ $(document).ready(function() {
     const favFood =  $("input:radio[name=food]:checked").val();
     const favAnimal =  $("input:radio[name=animal]:checked").val();
     let result = yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal);
-
+    alert (!!favBeverage)
   });
 });
 
 //Business Logic
 function yourLanguage(favBeverage, favMusic, favOutdoor, favFood, favAnimal) {
-    if()
-}
+  if (!!favBeverage === true) {
+    alert ("yay");
+  }
+    // if(!!favBeverage === true && !!favMusic && !!favOutdoor && favFood === "sushi" && !!favAnimal)
+ }
