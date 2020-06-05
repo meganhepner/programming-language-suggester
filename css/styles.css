@@ -13,3 +13,7 @@
 #RUBY{
   display: none;
 }
+
+.jumbotron{
+  background-image: linear-gradient(to right, #D86429,#A84A7E) ;
+}
