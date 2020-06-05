@@ -6,15 +6,16 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class = "container">
-      <div class = "jumbotron jumbotron-fluid">
+      <div class = "jumbotron">
         <h1>Which programming language should I choose?</h1>
       </div>
       <form id="ProgramLanguage">
         <div class = "formgroup">
-          <label for="beverage">What is your favorite beverage?</label>
+          <label for="beverage" class="question">What is your favorite beverage?</label>
           <div class="radio">
             <label>
               <input type="radio" name="beverage" value="coffee" >
@@ -42,7 +43,7 @@
         </div>
 
         <div class = "formgroup">
-          <label for="music">What is your favorite music?</label>
+          <label for="music" class="question">What is your favorite music?</label>
           <div class="radio">
             <label>
               <input type="radio" name="music" value="classical" >
@@ -70,7 +71,7 @@
         </div>
         
         <div class = "formgroup">
-          <label for="outdoor">What is your favorite outdoor activity?</label>
+          <label for="outdoor" class="question">What is your favorite outdoor activity?</label>
           <div class="radio">
             <label>
               <input type="radio" name="outdoor" value="beach" >
@@ -98,7 +99,7 @@
         </div>
 
         <div class = "formgroup">
-          <label for="food">What is your favorite food?</label>
+          <label for="food" class="question">What is your favorite food?</label>
           <div class="radio">
             <label>
               <input type="radio" name="food" value="sushi" >
@@ -126,7 +127,7 @@
         </div>
 
         <div class = "formgroup">
-          <label for="food">What is your favorite animal?</label>
+          <label for="food" class="question">What is your favorite animal?</label>
           <div class="radio">
             <label>
               <input type="radio" name="animal" value="dog" >
@@ -154,7 +155,9 @@
         </div>
         <button class="btn" type="submit" value="submit">Your Programming Language Is ...</button>
       </form>
-      <p id="python">You would love Python! It is adventurous and cultured, just like you! You can use it to explore the world with ArcGIS!</p>
+      <div id="python">
+         <p>You would love Python! It is adventurous and cultured, just like you! You can use it to explore the world with ArcGIS! <img src="images/python.png" alt="python logo" class="pythonlogo"></p>
+      </div>
       <p id="javascript">You would love JavaScript! It is frustrating and confusing, just like you!</p>
       <p id="COBOL">You would love COBOL! Just like you it's a bit mature, but still relevant!</p>
       <p id="RUBY">You would love Ruby! It is elegant, yet simple and productive, just like you!</p>

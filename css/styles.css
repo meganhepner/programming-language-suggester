@@ -1,6 +1,6 @@
-#python {
+/* #python {
   display: none;
-}
+}*/
 
 #javascript {
   display: none;
@@ -12,8 +12,28 @@
 
 #RUBY{
   display: none;
-}
+} 
 
 .jumbotron{
   background-image: linear-gradient(to right, #D86429,#A84A7E) ;
+}
+
+.question{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.btn{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: normal;
+  font-size: x-large;
+  background-color: #A84A7E;
+}
+
+.pythonlogo{
+  width : 200px;
+  height : auto;
+  float : left;
+
 }
