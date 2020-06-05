@@ -1,10 +1,10 @@
  #python {
   display: none;
-}*/
+}
 
-/* #javascript {
+#javascript {
   display: none;
-} */
+}
 
 #COBOL {
   display: none;
@@ -47,12 +47,12 @@
 }
 
 .language p {
-  padding : 15px;
-  
+  padding : 30px;
+
 }
 
 .language img{
-  width : 200px;
+  width : 100px;
   height : auto;
   float : left;
   margin : 10px;
